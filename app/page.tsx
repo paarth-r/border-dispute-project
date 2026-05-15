@@ -3,7 +3,7 @@ import StickyNav from '@/components/StickyNav'
 import StatCards from '@/components/StatCards'
 import ArticleSection from '@/components/ArticleSection'
 import Sources from '@/components/Sources'
-import { sections, meta } from '@/lib/content'
+import { sections, sectionImages, meta } from '@/lib/content'
 
 export default function Home() {
   return (
@@ -18,6 +18,7 @@ export default function Home() {
             id={section.id}
             title={section.title}
             paragraphs={section.paragraphs}
+            image={sectionImages[section.id]}
           />
         ))}
         <Sources />

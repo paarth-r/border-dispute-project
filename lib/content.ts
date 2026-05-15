@@ -11,6 +11,30 @@ export const stats = [
   { label: 'Last major war', value: '1962', note: 'China routed India in 3 weeks' },
 ]
 
+export interface SectionImage {
+  src: string
+  caption: string
+  credit: string
+}
+
+export const sectionImages: Record<string, SectionImage> = {
+  overview: {
+    src: 'https://upload.wikimedia.org/wikipedia/commons/5/51/Kashmir_Region_November_2019.jpg',
+    caption: 'The Kashmir region and Line of Actual Control (LAC), showing contested territories between India, Pakistan, and China.',
+    credit: 'CIA / Wikimedia Commons, public domain',
+  },
+  history: {
+    src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Aksai_Chin_Sino-Indian_border_map.svg/960px-Aksai_Chin_Sino-Indian_border_map.svg.png',
+    caption: 'Aksai Chin: competing territorial claims. India claims the full region; China controls and administers it. The Johnson and MacDonald Lines represent competing British-era boundary proposals.',
+    credit: 'Wikimedia Commons, public domain',
+  },
+  belligerents: {
+    src: 'https://upload.wikimedia.org/wikipedia/commons/8/82/China_India_CIA_map_border_disputes.jpg',
+    caption: 'CIA overview map of China-India border disputes along the LAC.',
+    credit: 'U.S. Central Intelligence Agency / Wikimedia Commons, public domain',
+  },
+}
+
 export const sections: { id: string; title: string; paragraphs: string[] }[] = [
   {
     id: 'overview',
