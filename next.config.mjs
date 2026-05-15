@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  basePath: '/sino-indian-border-report',
+  basePath: '/border-dispute-project',
   images: { unoptimized: true },
 }
 
