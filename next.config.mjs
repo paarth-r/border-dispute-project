@@ -1,4 +1,8 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  output: 'export',
+  basePath: '/sino-indian-border-report',
+  images: { unoptimized: true },
+}
 
-export default nextConfig;
+export default nextConfig
